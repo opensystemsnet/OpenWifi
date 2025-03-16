@@ -21,7 +21,9 @@
     "sass": "^1.69.0"
   },
   "devDependencies": {
-    "prettier": "^3.0.3"
+    "gh-pages": "^6.3.0",
+    "prettier": "^3.0.3",
+    "sharp": "^0.33.5"
   },
   "keywords": [
     "gatsby",
@@ -34,6 +36,8 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public",
+    "deploy:ci": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/opensystemsnet/OpenWifi.git"
   }
-} 
+}

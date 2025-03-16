@@ -1,15 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `OpenWifi.com`,
+    title: `OpenWifi`,
     description: `Enterprise-Grade OpenWifi Solutions`,
-    author: `OpenWifi.com Team`,
-    siteUrl: `https://openwifi.com`,
+    author: `@openwifi`,
+    siteUrl: `https://opensystemsnet.github.io/OpenWifi`,
   },
+  pathPrefix: "/OpenWifi",
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -41,11 +42,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `OpenWifi.com`,
-        short_name: `OpenWifi`,
+        name: `openwifi`,
+        short_name: `openwifi`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#0066cc`,
+        theme_color: `#0052CC`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
       },
