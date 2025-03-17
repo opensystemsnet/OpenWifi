@@ -2,6 +2,7 @@
   padding: 4rem 2rem;
   background: linear-gradient(135deg, var(--background-start) 0%, var(--background-end) 100%);
   min-height: calc(100vh - var(--header-height));
+  border: 20px solid var(--background-light);
 }
 
 .features-header {
@@ -129,6 +130,7 @@
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0 2rem;
 }
 
 .primary-button,
@@ -139,6 +141,8 @@
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
 }
 
 .primary-button {

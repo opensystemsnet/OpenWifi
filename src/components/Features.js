@@ -32,7 +32,7 @@ const Features = () => {
     {
       icon: '🔌',
       title: 'Multi-Vendor Support',
-      description: 'Compatible with a wide range of TIP OpenWiFi certified hardware.'
+      description: 'Compatible with a wide range of OpenWiFi.com validated hardware.'
     }
   ];
 

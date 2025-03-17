@@ -19,7 +19,7 @@ const Solutions = () => {
     },
     {
       title: 'Hardware Certification',
-      description: 'TIP OpenWiFi certified hardware from leading manufacturers.',
+      description: 'OpenWiFi.com validated hardware from leading manufacturers.',
       features: [
         'Enterprise-grade access points',
         'Indoor and outdoor options',

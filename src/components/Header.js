@@ -9,6 +9,14 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false); // Close mobile menu after clicking
+  };
+
   return (
     <header className="header">
       <div className="header-container">
@@ -29,19 +37,51 @@ const Header = () => {
         <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <ul>
             <li>
-              <Link to="/solutions">Solutions</Link>
+              <button 
+                className="nav-link"
+                onClick={() => scrollToSection('solutions')}
+              >
+                Solutions
+              </button>
               <ul className="submenu">
                 <li><Link to="/services/enterprise">Enterprise</Link></li>
                 <li><Link to="/services/certification">Certification</Link></li>
                 <li><Link to="/services/hosted-commercial-openwifi">Hosted Commercial</Link></li>
               </ul>
             </li>
-            <li><Link to="/features">Features</Link></li>
-            <li><Link to="/hardware">Hardware</Link></li>
-            <li><Link to="/partners">Partners</Link></li>
-            <li><Link to="/documentation">Documentation</Link></li>
+            <li>
+              <button 
+                className="nav-link"
+                onClick={() => scrollToSection('features')}
+              >
+                Features
+              </button>
+            </li>
+            <li>
+              <button 
+                className="nav-link"
+                onClick={() => scrollToSection('hardware')}
+              >
+                Hardware
+              </button>
+            </li>
+            <li>
+              <button 
+                className="nav-link"
+                onClick={() => scrollToSection('documentation')}
+              >
+                Documentation
+              </button>
+            </li>
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact" className="cta-button">Contact</Link></li>
+            <li>
+              <button 
+                className="nav-link cta-button"
+                onClick={() => scrollToSection('contact')}
+              >
+                Contact
+              </button>
+            </li>
           </ul>
         </nav>
       </div>

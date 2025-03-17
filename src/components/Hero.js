@@ -68,7 +68,7 @@ const Hero = () => {
         <motion.div className="hero-badges" variants={itemVariants}>
           <div className="badge">
             <span className="badge-icon">✓</span>
-            <span>TIP OpenWiFi Certified</span>
+            <span>OpenWiFi.com validated hardware</span>
           </div>
           <div className="badge">
             <span className="badge-icon">🛡️</span>
