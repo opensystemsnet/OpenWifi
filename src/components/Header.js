@@ -82,6 +82,11 @@ const Header = () => {
                 Contact
               </button>
             </li>
+            <li>
+              <Link to="/support" className="nav-link">
+                Support
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
