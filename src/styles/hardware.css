@@ -1,0 +1,248 @@
+.hardware-page {
+  padding: calc(var(--header-height) + 2rem) 2rem 6rem;
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+}
+
+.hardware-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.hardware-header h1 {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.hardware-header p {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.certification-info {
+  max-width: var(--max-width);
+  margin: 0 auto 4rem;
+}
+
+.cert-badge {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cert-icon {
+  font-size: 2rem;
+  width: 64px;
+  height: 64px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-details h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.cert-details p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.hardware-categories {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.hardware-category {
+  margin-bottom: 4rem;
+}
+
+.hardware-category h2 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.hardware-category > p {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.devices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.device-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.device-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.device-header {
+  margin-bottom: 1.5rem;
+}
+
+.device-header h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.manufacturer {
+  color: var(--text-light);
+  font-size: 0.875rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.certification-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.device-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.device-features li {
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.device-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.device-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.device-actions .primary-button,
+.device-actions .secondary-button {
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.hardware-cta {
+  max-width: 800px;
+  margin: 6rem auto 0;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--primary-color);
+  border-radius: 12px;
+  color: white;
+}
+
+.hardware-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hardware-cta p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cta-buttons .primary-button {
+  background: white;
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-buttons .secondary-button {
+  background: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-buttons .primary-button:hover,
+.cta-buttons .secondary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .hardware-page {
+    padding: calc(var(--header-height) + 2rem) 1rem 4rem;
+  }
+
+  .hardware-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .cert-badge {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .devices-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .device-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .primary-button,
+  .cta-buttons .secondary-button {
+    width: 100%;
+  }
+} 

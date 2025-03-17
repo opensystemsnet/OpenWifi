@@ -15,7 +15,7 @@ To democratize enterprise WiFi by providing open, secure, and scalable solutions
 
 ## Our Story
 
-Founded by industry veterans from leading companies like Boingo, Qualcomm, and Meta, OpenWifi.com emerged from a vision to transform how enterprises deploy and manage their WiFi infrastructure. Our team's deep expertise in WiFi technology, coupled with a commitment to open source principles, drives our innovation in enterprise networking.
+Founded by industry veterans from leading companies like Boingo, Qualcomm, Arris, Ruckus, Commscope and Meta, OpenWifi.com emerged from a vision to transform how enterprises deploy and manage their WiFi infrastructure. Our team's deep expertise in WiFi technology, coupled with a commitment to open source principles, drives our innovation in enterprise networking.
 
 ## Our Values
 

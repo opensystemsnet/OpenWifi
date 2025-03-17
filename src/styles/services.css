@@ -1,0 +1,206 @@
+.service-page {
+  padding: 4rem 0;
+}
+
+.service-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.service-header h1 {
+  margin-bottom: 1.5rem;
+}
+
+.service-header .lead {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.benefits-section,
+.features-section,
+.process-section,
+.advantages-section,
+.solutions-section {
+  margin-bottom: 4rem;
+}
+
+.benefits-section h2,
+.features-section h2,
+.process-section h2,
+.advantages-section h2,
+.solutions-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.benefits-grid,
+.features-grid,
+.process-grid,
+.advantages-grid,
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card,
+.feature-card,
+.process-card,
+.advantage-card,
+.solution-card {
+  background: var(--card-background);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-fast);
+}
+
+.benefit-card:hover,
+.feature-card:hover,
+.process-card:hover,
+.advantage-card:hover,
+.solution-card:hover {
+  transform: translateY(-4px);
+}
+
+.benefit-card h3,
+.feature-card h3,
+.process-card h3,
+.advantage-card h3,
+.solution-card h3 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.benefit-card ul,
+.feature-card ul,
+.process-card ul,
+.advantage-card ul,
+.solution-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit-card li,
+.feature-card li,
+.process-card li,
+.advantage-card li,
+.solution-card li {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.benefit-card li::before,
+.feature-card li::before,
+.process-card li::before,
+.advantage-card li::before,
+.solution-card li::before {
+  content: "•";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+}
+
+.process-card {
+  border-left: 4px solid var(--accent-color);
+}
+
+.process-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.solution-card {
+  background: linear-gradient(to bottom right, var(--card-background), var(--background-light));
+}
+
+.cta-section {
+  text-align: center;
+  background: var(--accent-color-light);
+  padding: 4rem;
+  border-radius: var(--radius-lg);
+  margin-top: 4rem;
+}
+
+.cta-section h2 {
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.button-primary {
+  background: var(--accent-color);
+  color: white;
+}
+
+.button-primary:hover {
+  background: var(--accent-color-dark);
+}
+
+.button-secondary {
+  background: var(--background-light);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.button-secondary:hover {
+  background: var(--accent-color-light);
+}
+
+@media (max-width: 768px) {
+  .service-page {
+    padding: 3rem 0;
+  }
+
+  .service-header {
+    margin-bottom: 3rem;
+  }
+
+  .benefits-section,
+  .features-section,
+  .process-section,
+  .advantages-section,
+  .solutions-section {
+    margin-bottom: 3rem;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .button {
+    width: 100%;
+  }
+} 

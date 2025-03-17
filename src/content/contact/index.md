@@ -30,10 +30,14 @@ Interested in joining our partner ecosystem?
 ## Office Locations
 
 ### North America
-123 Tech Plaza
-San Jose, CA 95110
+132 West 31st St
+Manhattan, NY 10001
 United States
 [Directions](#map)
+
+9231 Irvine Blvd 
+Irvine, CA 92618
+United States
 
 ### Europe
 456 Innovation Center

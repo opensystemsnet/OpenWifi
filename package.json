@@ -5,9 +5,12 @@
   "version": "1.0.0",
   "author": "OpenWifi.com Team",
   "dependencies": {
+    "@netlify/plugin-gatsby": "^3.8.3",
+    "framer-motion": "^10.18.0",
     "gatsby": "^5.12.4",
     "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
+    "gatsby-plugin-netlify": "^5.1.1",
     "gatsby-plugin-react-helmet": "^6.12.0",
     "gatsby-plugin-sass": "^6.12.0",
     "gatsby-plugin-sharp": "^5.12.0",
@@ -18,10 +21,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "sass": "^1.69.0"
+    "sass": "^1.69.0",
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
+    "netlify-cli": "^17.0.0",
     "prettier": "^3.0.3",
     "sharp": "^0.33.5"
   },
@@ -37,7 +43,12 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public",
-    "deploy:ci": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/opensystemsnet/OpenWifi.git"
+    "deploy": "gatsby build && netlify deploy",
+    "deploy:prod": "gatsby build && netlify deploy --prod",
+    "check-links": "node scripts/check-links.js"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.6.7"
   }
 }

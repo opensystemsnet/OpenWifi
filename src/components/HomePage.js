@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import { motion } from 'framer-motion'
 import { StaticImage } from 'gatsby-plugin-image'
 import TeamGrid from './TeamGrid'
+import heroImage from '../images/hero-network.svg'
 
 const HomePage = ({ data }) => {
   const fadeIn = {
@@ -14,40 +15,41 @@ const HomePage = ({ data }) => {
   return (
     <div className="homepage">
       {/* Hero Section */}
-      <motion.section 
-        className="hero"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
+      <section className="hero">
         <div className="hero-content">
-          <motion.h1 {...fadeIn}>
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             Enterprise WiFi Without Compromise
           </motion.h1>
-          <motion.p 
-            {...fadeIn}
-            transition={{ delay: 0.2 }}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Transform your network infrastructure with commercial-grade OpenWifi solutions. Built by industry veterans, trusted by leading enterprises.
+            Open-source, enterprise-grade WiFi solutions for service providers and large organizations
           </motion.p>
           <motion.div 
             className="hero-buttons"
-            {...fadeIn}
-            transition={{ delay: 0.4 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <Link to="/contact" className="button primary">Schedule a Demo</Link>
-            <Link to="/solutions" className="button secondary">View Solutions</Link>
+            <button className="primary">Schedule a Demo</button>
+            <button className="secondary">View Solutions</button>
           </motion.div>
         </div>
-        <div className="hero-image">
-          <StaticImage
-            src="../images/hero-network.png"
-            alt="Enterprise WiFi Network"
-            placeholder="blurred"
-            layout="fullWidth"
-          />
-        </div>
-      </motion.section>
+        <motion.div 
+          className="hero-image"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <img src={heroImage} alt="Network Visualization" />
+        </motion.div>
+      </section>
 
       {/* Solutions Section */}
       <section className="solutions">
